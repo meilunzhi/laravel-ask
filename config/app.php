@@ -150,15 +150,15 @@ return [
 		/*
 			         * Package Service Providers...
 		*/
-		// Mews\Captcha\CaptchaServiceProvider::class,
-		// Mews\Purifier\PurifierServiceProvider::class,
+		Mews\Captcha\CaptchaServiceProvider::class,
+		Mews\Purifier\PurifierServiceProvider::class,
 		Intervention\Image\ImageServiceProvider::class,
-		// SocialiteProviders\Manager\ServiceProvider::class,
-		//Maatwebsite\Excel\ExcelServiceProvider::class,
-		// Mrgoon\AliSms\ServiceProvider::class,
-		// Sdfsky\TipaskXunSearch\ServiceProvider::class,
+		SocialiteProviders\Manager\ServiceProvider::class,
+		Maatwebsite\Excel\ExcelServiceProvider::class,
+		Mrgoon\AliSms\ServiceProvider::class,
+		Sdfsky\TipaskXunSearch\ServiceProvider::class,
 		Germey\Geetest\GeetestServiceProvider::class,
-		// SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
+		SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
 
 		/*
 			         * Application Service Providers...
@@ -225,7 +225,7 @@ return [
 		'Purifier' => Mews\Purifier\Facades\Purifier::class,
 		'Geetest' => Germey\Geetest\Geetest::class,
 		'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
-//        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+		'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 
 	],
 
