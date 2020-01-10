@@ -1,7 +1,7 @@
 {
-    "name": "tipask/tipask",
-    "description": "Tipask是一款100%开放源码的PHP问答系统，基于Laravel5.6 版本开发，容易扩展，具有强大的负载能力和稳定性。",
-    "keywords": ["tipask", "问答系统","社区问答系统","laravel问答系统"],
+    "name": "laravel/cms",
+    "description": "laravel cms",
+    "keywords": ["laravel", "问答系统","社区问答系统","laravel问答系统"],
     "license": "MPL",
     "type": "project",
     "require": {
@@ -10,18 +10,16 @@
         "fideloper/proxy": "^4.0",
         "germey/geetest": "^3.0",
         "intervention/image": "^2.4",
-        "laravel/framework": "5.6.*",
+        "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
-        "laravelium/sitemap": "2.8.*",
-        "mews/captcha": "^2.1",
-        "mews/purifier": "^2.1",
+        "laravelium/sitemap": "3.1.*",
+        "maatwebsite/excel": "^3.1",
+        "mews/captcha": "^3.0",
+        "mews/purifier": "^3.1",
         "mrgoon/aliyun-sms": "^2.0",
         "predis/predis": "^1.1",
         "sdfsky/tipask-xunsearch": "^1.0",
-        "simplesoftwareio/simple-qrcode": "~2",
-        "socialiteproviders/qq": "^3.0",
-        "socialiteproviders/weibo": "^3.0",
-        "socialiteproviders/weixin-web": "^3.0"
+        "simplesoftwareio/simple-qrcode": "^2.0"
     },
     "require-dev": {
         "filp/whoops": "^2.0",
