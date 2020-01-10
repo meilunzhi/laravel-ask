@@ -8,6 +8,7 @@
         "php": "^7.3.8",
         "doctrine/cache": "^1.10",
         "doctrine/event-manager": "^1.1",
+        "fideloper/proxy": "^4.2",
         "germey/geetest": "^3.0",
         "guzzlehttp/guzzle": "^6.5",
         "guzzlehttp/promises": "^1.3",
