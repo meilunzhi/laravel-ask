@@ -22,11 +22,11 @@ class ArticleController extends Controller
 
     /*问题创建校验*/
     protected $validateRules = [
-        'title' => 'required|min:5|max:255',
-        'content' => 'required|min:50|max:16777215',
-        'summary' => 'sometimes|max:255',
-        'tags' => 'sometimes|max:128',
-        'category_id' => 'sometimes|numeric'
+        'title'       => 'required|min:5|max:255',
+        'content'     => 'required|min:50|max:16777215',
+        'summary'     => 'sometimes|max:255',
+        'tags'        => 'sometimes|max:128',
+        'category_id' => 'sometimes|numeric',
     ];
 
     /**
@@ -85,12 +85,12 @@ class ArticleController extends Controller
         $this->validate($request,$this->validateRules);
 
         $data = [
-            'user_id'      => $loginUser->id,
-            'category_id'      => intval($request->input('category_id',0)),
-            'title'        => trim($request->input('title')),
-            'content'  => clean($request->input('content')),
-            'summary'  => $request->input('summary'),
-            'status'       => 1,
+            'user_id'     => $loginUser->id,
+            'category_id' => intval($request->input('category_id', 0)),
+            'title'       => trim($request->input('title')),
+            'content'     => clean($request->input('content')),
+            'summary'     => $request->input('summary'),
+            'status'      => 1,
         ];
 
         if($request->hasFile('logo')){
