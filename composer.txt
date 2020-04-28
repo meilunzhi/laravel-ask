@@ -1,0 +1,5 @@
+     socialiteproviders/qq
+      socialiteproviders/weibo
+      socialiteproviders/weixin
+      socialiteproviders/twitch
+      socialiteproviders/google
