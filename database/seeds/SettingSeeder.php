@@ -431,7 +431,7 @@ class SettingSeeder extends Seeder
         ]);
         /*友情连接*/
         DB::table('friendship_links')->insert([
-            ['id' => '1','name' => 'tipask问答网','slogan' => '国内最好PHP开源的问答系统','url' => 'https://wenda.tipask.com','sort' => '1','status' => '1','created_at' => '2016-05-10 18:25:54','updated_at' => '2016-05-10 18:28:05'],
+            ['id' => '1','name' => '问答网','slogan' => '国内最好PHP开源的问答系统','url' => 'https://dev.tipask.io','sort' => '1','status' => '1','created_at' => '2016-05-10 18:25:54','updated_at' => '2016-05-10 18:28:05'],
         ]);
     }
 }
