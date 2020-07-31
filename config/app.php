@@ -227,6 +227,7 @@ return [
 		'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
 		'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 
+
 	],
 
 ];
