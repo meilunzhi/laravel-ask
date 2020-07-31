@@ -64,11 +64,11 @@ class AnswerController extends Controller
         $this->validate($request,$this->validateRules);
         $answerContent = clean($request->input('content'));
         $data = [
-            'user_id'      => $loginUser->id,
-            'question_id'      => $question_id,
-            'question_title'        => $question->title,
-            'content'  => $answerContent,
-            'status'   => 1,
+            'user_id'        => $loginUser->id,
+            'question_id'    => $question_id,
+            'question_title' => $question->title,
+            'content'        => $answerContent,
+            'status'         => 1,
         ];
         $answer = Answer::create($data);
         if($answer){
@@ -86,7 +86,7 @@ class AnswerController extends Controller
 
             /*记录通知*/
             $this->notify($answer->user_id,$question->user_id,'answer',$question->title,$question->id,$answer->content);
-            
+
             /*回答后通知关注问题*/
             if(intval($request->input('followed'))){
                 $attention = Attention::where("user_id",'=',$request->user()->id)->where('source_type','=',get_class($question))->where('source_id','=',$question->id)->count();
@@ -95,7 +95,7 @@ class AnswerController extends Controller
                         'user_id'     => $request->user()->id,
                         'source_id'   => $question->id,
                         'source_type' => get_class($question),
-                        'subject'  => $question->title,
+                        'subject'     => $question->title,
                     ];
                     Attention::create($data);
 
