@@ -24,8 +24,11 @@ class EventServiceProvider extends ServiceProvider
             'SocialiteProviders\QQ\QqExtendSocialite@handle',
             'SocialiteProviders\Weibo\WeiboExtendSocialite@handle',
             'SocialiteProviders\WeixinWeb\WeixinWebExtendSocialite@handle',
-        ]
+        ],
+
     ];
+
+
 
     /**
      * Register any events for your application.
